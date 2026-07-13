@@ -40,7 +40,7 @@ public class ValidParentheses {
             if (acceptedOpen.contains(currentCharacter)) {
                 execution.push(currentCharacter);
             } else {
-                if (execution.size() > 0 && execution.peek() == getClose(currentCharacter)) {
+                if (!execution.isEmpty() && execution.peek() == getClose(currentCharacter)) {
                     execution.pop();
                 } else {
                     return false;
@@ -48,20 +48,16 @@ public class ValidParentheses {
             }
         }
 
-        return execution.size() == 0;
+        return execution.isEmpty();
     }
 
     private static Character getClose(Character currentChar) {
-        switch (currentChar) {
-            case '}':
-                return '{';
-            case ']':
-                return '[';
-            case ')':
-                return '(';
-            default:
-                return ' ';
-        }
+        return switch (currentChar) {
+            case '}' -> '{';
+            case ']' -> '[';
+            case ')' -> '(';
+            default -> ' ';
+        };
     }
 
 
