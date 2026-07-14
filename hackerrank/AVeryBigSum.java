@@ -39,8 +39,6 @@ public class AVeryBigSum {
     }
 
     public static long aVeryBigSum(List<Long> ar) {
-
-        return ar.stream().reduce(0L, (a, b) -> a + b);
-
+        return ar.stream().reduce(0L, Long::sum);
     }
 }

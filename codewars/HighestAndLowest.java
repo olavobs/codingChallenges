@@ -20,7 +20,7 @@ public class HighestAndLowest {
         var numbersArray = numbers.split(" ");
 
         for (int i = 0; i < numbersArray.length; i++) {
-            var number = Integer.valueOf(numbersArray[i]);
+            var number = Integer.parseInt(numbersArray[i]);
             if (number < lowestNumber) {
                 lowestNumber = number;
             }

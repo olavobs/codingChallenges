@@ -32,7 +32,7 @@ public class FrogJmp {
     }
 
     public static int solution(int currentPos, int goalPos, int jump) {
-        double numOfJumps =  Math.ceil((goalPos - currentPos)/Double.valueOf(jump));
+        double numOfJumps =  Math.ceil((goalPos - currentPos)/ (double) jump);
 
         return (int) numOfJumps;
     }

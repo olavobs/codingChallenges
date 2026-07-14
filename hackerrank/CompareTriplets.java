@@ -49,9 +49,6 @@ public class CompareTriplets {
                 bob++;
             }
         }
-
         return List.of(alice, bob);
     }
-
-
 }

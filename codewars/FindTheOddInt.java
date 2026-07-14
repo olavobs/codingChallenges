@@ -6,9 +6,7 @@ import java.util.Set;
 public class FindTheOddInt {
 
     public static void main(String[] args) {
-
-
-        System.out.println(findIT(new int[]{1,2,2,3,3,3,4,3,3,3,2,2,1}));
+        System.out.println(findIT(new int[]{1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1}));
 
     }
 

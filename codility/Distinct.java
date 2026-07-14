@@ -1,7 +1,7 @@
 package codility;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Write a function
@@ -29,7 +29,12 @@ public class Distinct {
     }
 
     public static int solution(int[] A) {
-        return Arrays.stream(A).boxed().collect(Collectors.toSet()).size();
+        Set<Integer> values = new HashSet<>();
+        for (int j : A) {
+            values.add(j);
+        }
+
+        return values.size();
     }
 
 }
