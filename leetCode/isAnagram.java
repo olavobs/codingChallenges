@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class isAnagram {
     public static void main(String[] args) {
-        System.out.println(isAnagram("anagram", "nagaram"));
+        System.out.println(isAnagram("ggii", "eekk"));
     }
 
     public static boolean isAnagram(String s, String t) {
@@ -24,14 +24,14 @@ public class isAnagram {
             return false;
         }
 
-        char[] c = new char[26];
+        int[] c = new int[26];
 
         for (int i = 0; i < s.length(); i++) {
             c[s.charAt(i) - 'a']++;
             c[t.charAt(i) - 'a']--;
         }
 
-        for (char value : c) {
+        for (int value : c) {
             if (value != 0) {
                 return false;
             }
