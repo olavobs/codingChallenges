@@ -9,7 +9,7 @@ public class SimpleArraySum {
     }
 
     public static int simpleArraySum(List<Integer> ar) {
-        return ar.stream().reduce(0, (x,y)-> x+y);
+        return ar.stream().reduce(0, (x, y) -> x + y);
 
     }
 

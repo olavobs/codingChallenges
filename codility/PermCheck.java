@@ -59,8 +59,8 @@ public class PermCheck {
 
         Set<Integer> aux = new HashSet<>();
 
-        for (int i = 0; i < A.length; i++) {
-            aux.add(A[i]);
+        for (int j : A) {
+            aux.add(j);
         }
 
         for (int i = 1; i < A.length + 1; i++) {

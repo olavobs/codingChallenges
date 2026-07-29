@@ -35,23 +35,17 @@ import java.util.Set;
 public class OddOccurrencesInArray {
 
     public static void main(String[] args) {
-        System.out.println(solution(new int[]{9,3,9,3,9,7,9}));
+        System.out.println(solution(new int[]{9, 3, 9, 3, 9, 7, 9}));
     }
 
     public static int solution(int[] A) {
         Set<Integer> aux = new HashSet<>();
 
-        for (int i = 0; i < A.length; i++) {
-            var currentElement = A[i];
-
-            if (aux.contains(currentElement)) {
-                aux.remove(currentElement);
-            } else {
+        for (int currentElement : A) {
+            if (!aux.remove(currentElement)) {
                 aux.add(currentElement);
             }
         }
         return aux.iterator().next();
     }
-
-
 }

@@ -19,7 +19,6 @@ package leetCode;
 //Output: "ay"
 
 import java.util.Stack;
-import java.util.stream.Collectors;
 
 public class RemoveAllAdjacentDuplicatesInString {
 

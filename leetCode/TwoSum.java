@@ -24,10 +24,10 @@ import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(twoSum(new int[]{3,3}, 6))); // 0,1
-        System.out.println(Arrays.toString(twoSum(new int[]{3,2,4}, 6))); // 1,2
-        System.out.println(Arrays.toString(twoSum(new int[]{3,4,0}, 3))); // 0,1
-        System.out.println(Arrays.toString(twoSum(new int[]{2,7,11,15}, 9))); //0,1
+        System.out.println(Arrays.toString(twoSum(new int[]{3, 3}, 6))); // 0,1
+        System.out.println(Arrays.toString(twoSum(new int[]{3, 2, 4}, 6))); // 1,2
+        System.out.println(Arrays.toString(twoSum(new int[]{3, 4, 0}, 3))); // 0,1
+        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9))); //0,1
     }
 
     public static int[] twoSum(int[] nums, int target) {
@@ -36,7 +36,7 @@ public class TwoSum {
 
         for (int i = 0; i < nums.length; i++) {
             int difference = target - nums[i];
-            if(numMap.containsKey(difference)){
+            if (numMap.containsKey(difference)) {
                 return new int[]{numMap.get(difference), i};
             }
             numMap.put(nums[i], i);

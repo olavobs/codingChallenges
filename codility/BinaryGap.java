@@ -12,32 +12,28 @@ public class BinaryGap {
 //    N is an integer within the range [1..2,147,483,647].
 
     public static void main(String[] args) {
-        System.out.println(solution(529));
+        System.out.println(solution(561892));
+
     }
 
-    private static int solution(int N) {
-        String binaryString = Integer.toBinaryString(N);
+    public static int solution(int N) {
+        String binaryNumber = Integer.toBinaryString(N);
+        int maxSequence = 0;
+        int currentSequence = 0;
+        boolean hasPreviousOne = false;
 
-        int max = 0;
-        int temp = 0;
-        boolean has1Before = false;
-
-        for (int i = 0; i < binaryString.length(); i++) {
-            if (binaryString.charAt(i) == '1') {
-                if (!has1Before) {
-                    has1Before = true;
+        for (char c : binaryNumber.toCharArray()) {
+            if (c == '1') {
+                if (hasPreviousOne) {
+                    maxSequence = Math.max(currentSequence, maxSequence);
+                    currentSequence = 0;
                 } else {
-                    if (temp > max) {
-                        max = temp;
-                    }
-                    temp = 0;
+                    hasPreviousOne = true;
                 }
-            }
-            else if (binaryString.charAt(i) == '0' && has1Before) {
-                temp++;
+            } else {
+                currentSequence++;
             }
         }
-        // Implement your solution here
-        return max;
+        return maxSequence;
     }
 }

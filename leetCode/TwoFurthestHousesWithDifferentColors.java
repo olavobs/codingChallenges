@@ -28,7 +28,7 @@ package leetCode;
 public class TwoFurthestHousesWithDifferentColors {
     public static void main(String[] args) {
         System.out.println(maxDistance(new int[]{1, 8, 3, 8, 3}));
-        System.out.println(maxDistance(new int[]{0,1,1}));
+        System.out.println(maxDistance(new int[]{0, 1, 1}));
         System.out.println(maxDistance(new int[]{1, 1, 1, 6, 1, 1, 1}));
 
     }

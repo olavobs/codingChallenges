@@ -12,7 +12,10 @@ package leetCode;
 //Input: nums = [1,2,1,2,1,2,3,1,3,2], k = 2
 //Output: [1,2]
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 public class TopKFrequentElements {
     public static void main(String[] args) {
