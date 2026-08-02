@@ -1,0 +1,47 @@
+package leetCode;
+
+//Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+//Input: s = "anagram", t = "nagaram"
+//Output: true
+
+//Input: s = "rat", t = "car"
+//Output: false
+
+import java.util.Arrays;
+
+public class HM_isAnagram {
+    public static void main(String[] args) {
+        System.out.println(isAnagram("ggii", "eekk"));
+    }
+
+    public static boolean isAnagram(String s, String t) {
+        // Option 1
+//        return sortString(s).equals(sortString(t));
+
+        // Option 2
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        int[] c = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            c[s.charAt(i) - 'a']++;
+            c[t.charAt(i) - 'a']--;
+        }
+
+        for (int value : c) {
+            if (value != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static String sortString(String s) {
+        char[] c = s.toCharArray();
+        Arrays.sort(c);
+        return new String(c);
+    }
+}
