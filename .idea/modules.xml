@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/algoexpert/algoexpert.iml" filepath="$PROJECT_DIR$/algoexpert/algoexpert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codewars/codewars.iml" filepath="$PROJECT_DIR$/codewars/codewars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codility/codility.iml" filepath="$PROJECT_DIR$/codility/codility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hackerrank/hackerrank.iml" filepath="$PROJECT_DIR$/hackerrank/hackerrank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hellointerview/hellointerview.iml" filepath="$PROJECT_DIR$/hellointerview/hellointerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetCode/leetCode.iml" filepath="$PROJECT_DIR$/leetCode/leetCode.iml" />
     </modules>
   </component>
