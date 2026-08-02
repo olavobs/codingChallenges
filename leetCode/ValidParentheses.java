@@ -33,7 +33,7 @@ public class ValidParentheses {
 
         List<Character> acceptedOpen = List.of('{', '[', '(');
 
-        Stack execution = new Stack();
+        Stack<Character> execution = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
             var currentCharacter = s.charAt(i);

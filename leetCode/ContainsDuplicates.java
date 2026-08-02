@@ -1,7 +1,7 @@
 package leetCode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ContainsDuplicates {
 
@@ -29,15 +29,13 @@ public class ContainsDuplicates {
     }
 
     public static boolean containsDuplicate(int[] nums) {
-        List<Integer> aux = new ArrayList<>();
+        Set<Integer> aux = new HashSet<>();
 
         for (int num : nums) {
-            if (aux.contains(num)) {
+            if (!aux.add(num)) {
                 return true;
             }
-            aux.add(num);
         }
-
         return false;
     }
 }
