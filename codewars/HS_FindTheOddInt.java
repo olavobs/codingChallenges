@@ -24,3 +24,21 @@ public class HS_FindTheOddInt {
         return aux.iterator().next();
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o único número que aparece um número ímpar de vezes
+ * em um array (todos os outros aparecem um número par de vezes).
+ *
+ * 1. Usa um HashSet para guardar números que, até o momento, apareceram um
+ *    número ímpar de vezes ("não pareados").
+ * 2. Para cada número do array: se ele já está no set, remove (ele acabou
+ *    de formar um par); se não está, adiciona (começou um novo "não par").
+ * 3. Números que aparecem em pares acabam se cancelando (são adicionados e
+ *    depois removidos), sobrando no set apenas o número com ocorrência
+ *    ímpar.
+ * 4. Retorna esse número restante no set.
+ *
+ * Complexidade: O(n).
+ */

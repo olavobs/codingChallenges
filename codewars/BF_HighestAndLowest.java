@@ -31,3 +31,19 @@ public class BF_HighestAndLowest {
         return highestNumber + " " + lowestNumber;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Dada uma string de números separados por espaço, retornar o
+ * maior e o menor número.
+ *
+ * 1. Separa a string de números em um array usando espaço como delimitador.
+ * 2. Percorre o array convertendo cada item de String para inteiro.
+ * 3. Compara cada número com o menor e o maior valor encontrados até
+ *    agora, atualizando lowestNumber e highestNumber.
+ * 4. Ao final, retorna uma string com o maior e o menor número, separados
+ *    por espaço.
+ *
+ * Complexidade: O(n).
+ */

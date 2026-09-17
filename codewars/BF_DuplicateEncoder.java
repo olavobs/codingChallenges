@@ -52,3 +52,26 @@ public class BF_DuplicateEncoder {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Para cada caractere de uma string, retornar "(" se ele aparece
+ * só uma vez, ou ")" se aparece mais de uma vez (ignorando maiúsculas).
+ *
+ * 1. Converte a palavra inteira para minúsculas para ignorar capitalização.
+ * 2. Para cada caractere da palavra, verifica se a primeira ocorrência
+ *    (indexOf) e a última ocorrência (lastIndexOf) desse caractere são a
+ *    mesma posição.
+ * 3. Se forem iguais, o caractere aparece só uma vez → adiciona "(" ao
+ *    resultado.
+ * 4. Se forem diferentes, o caractere se repete → adiciona ")" ao
+ *    resultado.
+ * 5. Repete para todos os caracteres, formando a string de saída.
+ *
+ * Obs: o método comentado acima faz a mesma coisa, mas usando um HashMap
+ * para contar as ocorrências antes — mais eficiente, O(n).
+ *
+ * Complexidade da versão ativa: O(n²), pois indexOf/lastIndexOf percorrem
+ * a string a cada caractere.
+ */
