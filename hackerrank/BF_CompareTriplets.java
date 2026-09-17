@@ -52,3 +52,19 @@ public class BF_CompareTriplets {
         return List.of(alice, bob);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Comparar duas triplas de notas (Alice x Bob) posição por
+ * posição e contar quantos pontos cada um ganhou.
+ *
+ * 1. Inicializa os contadores de pontos de Alice e Bob em zero.
+ * 2. Percorre as três posições das triplas a e b.
+ * 3. Compara os valores em cada posição: se a[i] > b[i], soma ponto para
+ *    Alice; se a[i] < b[i], soma ponto para Bob; se forem iguais, ninguém
+ *    pontua.
+ * 4. Retorna uma lista com os pontos finais de Alice e Bob, nessa ordem.
+ *
+ * Complexidade: O(1), já que as triplas sempre têm tamanho fixo (3).
+ */

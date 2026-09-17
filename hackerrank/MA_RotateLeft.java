@@ -63,3 +63,20 @@ public class MA_RotateLeft {
 
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Rotacionar um array d posições para a esquerda.
+ *
+ * 1. Cria uma lista de saída vazia.
+ * 2. Para cada posição do array original, adiciona à lista de saída o
+ *    elemento que está atualmente no índice d (o deslocamento atual).
+ * 3. Incrementa d a cada iteração; quando d chega ao último índice do
+ *    array, ele volta para 0 (dando a volta, como um ponteiro circular).
+ * 4. Repete até preencher toda a lista de saída, que fica com os
+ *    elementos já rotacionados para a esquerda.
+ * 5. Retorna a lista rotacionada.
+ *
+ * Complexidade: O(n).
+ */

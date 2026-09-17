@@ -42,3 +42,18 @@ public class BF_AVeryBigSum {
         return ar.stream().reduce(0L, Long::sum);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Somar todos os elementos de um array de números muito grandes
+ * (que podem ultrapassar o limite de um int).
+ *
+ * 1. Recebe uma lista de valores do tipo Long, para suportar números que
+ *    ultrapassam o limite de um int.
+ * 2. Usa a operação reduce da Stream API para somar todos os elementos da
+ *    lista, começando de 0L.
+ * 3. Retorna a soma total.
+ *
+ * Complexidade: O(n).
+ */
