@@ -28,3 +28,21 @@ public class HM_FirstUniqueCharacterInAString {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o índice do primeiro caractere que aparece apenas uma
+ * vez em uma string.
+ *
+ * 1. Percorre a string uma primeira vez e conta, em um HashMap, quantas
+ *    vezes cada caractere aparece.
+ * 2. Percorre a string novamente, dessa vez em ordem, do início ao fim.
+ * 3. Para cada caractere, verifica no mapa se a contagem dele é
+ *    exatamente 1.
+ * 4. Retorna o índice do primeiro caractere cuja contagem for 1 (o
+ *    primeiro caractere único).
+ * 5. Se nenhum caractere for único, retorna -1.
+ *
+ * Complexidade: O(n).
+ */

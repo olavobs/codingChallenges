@@ -86,3 +86,23 @@ public class ST_BaseballGame {
         return computedValues.stream().reduce(0, Integer::sum);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Simular um jogo de beisebol com regras especiais de pontuação
+ * (números, soma dos dois últimos, dobro do último, invalidar o último) e
+ * retornar a soma final.
+ *
+ * 1. Usa uma lista (computedValues) para guardar o histórico de
+ *    pontuações válidas.
+ * 2. Para cada operação da entrada: se for "C", remove a última pontuação
+ *    registrada; se for "D", adiciona o dobro da última pontuação; se for
+ *    "+", adiciona a soma das duas últimas pontuações.
+ * 3. Se a operação for um número, simplesmente converte para inteiro e
+ *    adiciona à lista.
+ * 4. Repete para todas as operações da entrada.
+ * 5. Soma todos os valores da lista final e retorna o total.
+ *
+ * Complexidade: O(n).
+ */

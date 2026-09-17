@@ -45,3 +45,26 @@ public class HM_isAnagram {
         return new String(c);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Verificar se duas strings são anagramas uma da outra.
+ *
+ * 1. (Usando a Opção 2, ativa no código) Se as strings tiverem tamanhos
+ *    diferentes, já não podem ser anagramas — retorna false direto.
+ * 2. Cria um array de 26 posições (uma para cada letra do alfabeto),
+ *    inicializado em zero.
+ * 3. Percorre as duas strings ao mesmo tempo: incrementa a posição
+ *    correspondente à letra de s, e decrementa a posição correspondente
+ *    à letra de t.
+ * 4. Ao final, se as strings forem anagramas, cada posição do array deve
+ *    estar zerada (as contagens se cancelaram exatamente).
+ * 5. Se alguma posição for diferente de zero, as strings não são
+ *    anagramas — retorna false; senão, retorna true.
+ *
+ * Obs: há também uma Opção 1 comentada, que ordena as duas strings e
+ * compara — mais simples, mas O(n log n).
+ *
+ * Complexidade da versão ativa: O(n).
+ */

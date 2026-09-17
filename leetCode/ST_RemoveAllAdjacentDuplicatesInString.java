@@ -44,3 +44,22 @@ public class ST_RemoveAllAdjacentDuplicatesInString {
         return sb.toString();
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Remover repetidamente pares de letras adjacentes e iguais de
+ * uma string, até não haver mais pares para remover.
+ *
+ * 1. Usa uma pilha (Stack) de caracteres.
+ * 2. Para cada caractere da string, verifica se a pilha está vazia ou se
+ *    o topo dela é diferente do caractere atual.
+ * 3. Se for diferente (ou a pilha estiver vazia), empilha o caractere
+ *    atual.
+ * 4. Se for igual ao topo, significa que encontramos um par adjacente
+ *    igual — desempilha (removendo os dois caracteres da string final).
+ * 5. Ao final, monta a string resultante a partir dos caracteres que
+ *    restaram na pilha, na ordem em que foram empilhados.
+ *
+ * Complexidade: O(n).
+ */

@@ -39,3 +39,23 @@ public class TP_RemoveDuplicatesFromSortedArray {
         return aux;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Remover duplicatas de um array já ordenado, in-place, mantendo
+ * a ordem relativa dos elementos únicos.
+ *
+ * 1. Se o array estiver vazio, retorna 0 diretamente.
+ * 2. Usa um ponteiro aux, começando em 1, que marca a próxima posição
+ *    onde um valor único deve ser escrito.
+ * 3. Percorre o array com outro ponteiro i, comparando cada elemento com
+ *    o último valor único já confirmado (nums[aux - 1]).
+ * 4. Sempre que encontra um valor diferente do último único, escreve esse
+ *    valor na posição aux e avança aux.
+ * 5. Ao final, os primeiros aux elementos do array contêm todos os
+ *    valores únicos, em ordem — retorna aux como a quantidade de
+ *    elementos únicos.
+ *
+ * Complexidade: O(n).
+ */

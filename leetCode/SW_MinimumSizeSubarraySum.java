@@ -38,3 +38,25 @@ public class SW_MinimumSizeSubarraySum {
         return min == Integer.MAX_VALUE ? 0 : min;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o menor tamanho de subarray contígua cuja soma seja
+ * maior ou igual a um valor alvo (target).
+ *
+ * 1. Usa dois ponteiros, left e right, formando uma janela deslizante, e
+ *    uma variável sum para a soma da janela atual.
+ * 2. Expande a janela avançando right e somando o valor correspondente a
+ *    sum.
+ * 3. Enquanto a soma da janela for maior ou igual ao target, tenta
+ *    encolher a janela pela esquerda: atualiza o menor tamanho
+ *    encontrado (min), subtrai o valor que sai da janela de sum, e avança
+ *    left.
+ * 4. Repete até right percorrer todo o array.
+ * 5. Se nenhuma subarray válida foi encontrada, retorna 0; caso
+ *    contrário, retorna o menor tamanho de subarray cuja soma é maior ou
+ *    igual ao target.
+ *
+ * Complexidade: O(n).
+ */

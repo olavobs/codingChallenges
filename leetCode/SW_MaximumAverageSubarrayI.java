@@ -34,3 +34,22 @@ public class SW_MaximumAverageSubarrayI {
         return (double) maxSum / k;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar a maior média possível entre todas as subarrays
+ * contíguas de tamanho k.
+ *
+ * 1. Calcula a soma dos primeiros k elementos — essa é a soma da janela
+ *    inicial.
+ * 2. Guarda essa soma como a maior encontrada até agora (maxSum).
+ * 3. Desliza a janela: para cada elemento seguinte, soma o que entra e
+ *    subtrai o que sai da janela (o elemento k posições atrás).
+ * 4. Compara a soma da janela atual com a maior soma encontrada e
+ *    atualiza se for maior.
+ * 5. Ao final, divide a maior soma encontrada por k para obter a média
+ *    máxima, retornando como double.
+ *
+ * Complexidade: O(n).
+ */

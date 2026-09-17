@@ -49,3 +49,27 @@ public class SW_FindAllAnagramsInAString {
         return new String(c);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar todos os índices iniciais em uma string s onde existe
+ * um anagrama de outra string p.
+ *
+ * 1. Ordena as letras da string p (o padrão a ser encontrado) uma única
+ *    vez.
+ * 2. Define uma janela deslizante de tamanho igual ao de p, começando no
+ *    início da string s.
+ * 3. Para cada posição da janela, extrai a substring correspondente,
+ *    ordena suas letras também, e compara com p já ordenado.
+ * 4. Se forem iguais (mesma composição de letras), a posição inicial da
+ *    janela é um índice de anagrama válido — adiciona à lista de
+ *    resultados.
+ * 5. Desliza a janela uma posição para frente (left++ e right++) e repete
+ *    até o fim da string.
+ * 6. Retorna a lista com todos os índices iniciais de anagramas
+ *    encontrados.
+ *
+ * Complexidade: O(n * m log m), onde m é o tamanho de p (por causa da
+ * ordenação repetida a cada janela).
+ */

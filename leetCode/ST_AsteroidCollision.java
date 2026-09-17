@@ -74,3 +74,27 @@ public class ST_AsteroidCollision {
         return answer;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Simular colisões entre asteroides em fila; o menor explode, e
+ * ambos explodem se forem do mesmo tamanho.
+ *
+ * 1. Usa uma pilha (Stack) para simular os asteroides "sobreviventes" até
+ *    o momento, da esquerda para a direita.
+ * 2. Se o asteroide atual for positivo (indo para a direita), apenas
+ *    empilha — ele só vai colidir mais tarde, com algo vindo da esquerda
+ *    (negativo).
+ * 3. Se for negativo (indo para a esquerda), compara com o topo da pilha
+ *    enquanto houver um asteroide positivo lá: se o atual for maior (em
+ *    valor absoluto), o do topo explode (pop) e a comparação continua; se
+ *    forem do mesmo tamanho, ambos explodem; se o do topo for maior, o
+ *    atual explode e o laço para.
+ * 4. Se o asteroide atual sobreviver a todas as colisões, ele é
+ *    empilhado.
+ * 5. Ao final, a pilha contém os asteroides que sobreviveram, na ordem
+ *    correta — o array de resposta é montado desempilhando-os.
+ *
+ * Complexidade: O(n).
+ */

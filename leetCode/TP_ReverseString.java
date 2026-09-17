@@ -31,3 +31,20 @@ public class TP_ReverseString {
         System.out.println(Arrays.toString(s));
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Inverter uma string representada como array de caracteres,
+ * in-place, com memória extra O(1).
+ *
+ * 1. Define dois ponteiros: left no início do array e right no fim.
+ * 2. Enquanto left for menor que right, troca (swap) os caracteres nas
+ *    duas posições.
+ * 3. Avança left para frente e recua right para trás a cada troca.
+ * 4. Repete até os ponteiros se cruzarem, momento em que o array já está
+ *    totalmente invertido, tudo feito in-place.
+ * 5. Imprime o array já revertido.
+ *
+ * Complexidade: O(n) tempo, O(1) espaço extra.
+ */

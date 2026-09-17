@@ -72,3 +72,26 @@ public class HM_TwoSumII_InputArrayIsSorted {
         return null;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Igual ao Two Sum clássico, mas o array já vem ordenado e a
+ * resposta deve usar índices começando em 1.
+ *
+ * 1. (Usando a Solução 3, que é a ativa no código) Cria um HashMap para
+ *    guardar número → índice.
+ * 2. Para cada número, calcula a diferença necessária para atingir o
+ *    target.
+ * 3. Se o mapa ainda não tiver essa diferença como chave, adiciona o
+ *    número atual ao mapa.
+ * 4. Se a diferença já estiver no mapa, encontrou o par: retorna os dois
+ *    índices (+1, pois o problema pede índices começando em 1).
+ *
+ * Obs: há duas outras soluções comentadas no arquivo — uma força bruta
+ * O(n²) comparando todos os pares, e uma com dois ponteiros (left/right)
+ * que aproveita o array já estar ordenado, sendo O(n) tempo e O(1) espaço
+ * extra — mais alinhada com a restrição do enunciado.
+ *
+ * Complexidade da versão ativa: O(n) tempo, O(n) espaço.
+ */

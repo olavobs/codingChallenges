@@ -37,3 +37,23 @@ public class BF_LongestCommonPrefix {
         return answer;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o maior prefixo comum entre um array de strings.
+ *
+ * 1. Se o array de strings estiver vazio, retorna uma string vazia.
+ * 2. Assume a primeira string do array como candidata inicial ao prefixo
+ *    comum.
+ * 3. Para cada string seguinte, verifica se ela começa com o prefixo
+ *    candidato (indexOf retornando 0).
+ * 4. Enquanto não começar, remove o último caractere do prefixo candidato
+ *    e testa de novo, encurtando o prefixo até que ele seja compatível
+ *    com a string atual.
+ * 5. Ao final, o que sobrar do prefixo candidato é o maior prefixo comum
+ *    entre todas as strings do array.
+ *
+ * Complexidade: O(n*m), onde n é o número de strings e m o tamanho médio
+ * delas.
+ */

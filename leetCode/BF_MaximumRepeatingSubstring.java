@@ -37,3 +37,21 @@ public class BF_MaximumRepeatingSubstring {
         return k;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar quantas vezes seguidas uma palavra (word) se repete
+ * dentro de uma sequência (sequence), formando uma substring válida.
+ *
+ * 1. Começa com uma cópia da palavra (curr) e um contador k em zero.
+ * 2. Enquanto a sequência contiver a substring atual (curr), incrementa k
+ *    e concatena mais uma cópia da palavra a curr.
+ * 3. Assim que curr (com mais uma repetição) deixa de ser encontrada
+ *    dentro de sequence, o laço para.
+ * 4. Retorna k, que representa quantas vezes seguidas a palavra se repete
+ *    dentro da sequência.
+ *
+ * Complexidade: O(k * |sequence|) no pior caso, por causa do contains
+ * repetido a cada iteração.
+ */

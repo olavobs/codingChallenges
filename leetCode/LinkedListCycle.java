@@ -40,3 +40,22 @@ public class LinkedListCycle {
         }
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Detectar se uma lista encadeada contém um ciclo.
+ *
+ * 1. Se a lista estiver vazia (head null), não há ciclo — retorna false.
+ * 2. Usa dois ponteiros: slow, que avança 1 nó por vez, e fast, que avança
+ *    2 nós por vez (técnica do "coelho e da tartaruga" / Floyd's Cycle
+ *    Detection).
+ * 3. Em cada passo, verifica se fast ou fast.next chegaram a null — se
+ *    sim, a lista tem um fim (não é circular), retorna false.
+ * 4. Move slow um nó e fast dois nós adiante.
+ * 5. Se em algum momento slow e fast apontarem para o mesmo nó, é porque o
+ *    ponteiro mais rápido "deu a volta" e encontrou o mais lento dentro
+ *    de um ciclo — retorna true.
+ *
+ * Complexidade: O(n) tempo, O(1) espaço.
+ */

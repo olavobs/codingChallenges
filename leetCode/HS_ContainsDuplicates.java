@@ -39,3 +39,18 @@ public class HS_ContainsDuplicates {
         return false;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Verificar se um array contém algum valor duplicado.
+ *
+ * 1. Cria um HashSet vazio.
+ * 2. Percorre o array tentando adicionar cada número ao set.
+ * 3. O método add de um Set retorna false se o elemento já existia — nesse
+ *    caso, encontramos um duplicado e retorna true imediatamente.
+ * 4. Se o laço terminar sem nenhuma tentativa de adição falhar, significa
+ *    que todos os elementos são únicos — retorna false.
+ *
+ * Complexidade: O(n).
+ */

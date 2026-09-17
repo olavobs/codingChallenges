@@ -49,3 +49,24 @@ public class TP_ValidPalindrome {
 //        return cleaned.equals(new StringBuilder(cleaned).reverse().toString());
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Verificar se uma frase é um palíndromo, ignorando maiúsculas e
+ * caracteres não alfanuméricos.
+ *
+ * 1. Remove espaços das extremidades, elimina todos os caracteres que não
+ *    são letras ou números (usando regex), e converte tudo para
+ *    minúsculas — gerando uma versão "limpa" da string.
+ * 2. Se a string limpa tiver menos de 2 caracteres, já é automaticamente
+ *    um palíndromo — retorna true.
+ * 3. Usa dois ponteiros, left no início e right no fim da string limpa.
+ * 4. Compara os caracteres nas duas extremidades; se forem diferentes em
+ *    algum momento, não é um palíndromo — retorna false.
+ * 5. Avança left e recua right a cada comparação bem-sucedida, até eles
+ *    se cruzarem.
+ * 6. Se todas as comparações passarem, é um palíndromo — retorna true.
+ *
+ * Complexidade: O(n).
+ */

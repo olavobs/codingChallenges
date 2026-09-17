@@ -37,3 +37,21 @@ public class BS_SearchInsertPosition {
         return left;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Buscar um valor em um array ordenado; se não existir, retornar
+ * a posição onde ele deveria ser inserido para manter a ordenação.
+ *
+ * 1. Define os ponteiros left e right nos extremos do array.
+ * 2. Faz busca binária: calcula o meio (mid) e compara com o alvo.
+ * 3. Se encontrar o valor exato, retorna o índice mid imediatamente.
+ * 4. Se o valor no meio for menor que o alvo, move left para mid + 1; se
+ *    for maior, move right para mid - 1.
+ * 5. Quando o laço termina sem encontrar o valor, left aponta exatamente
+ *    para a posição onde o alvo deveria ser inserido para manter o array
+ *    ordenado — é esse valor que é retornado.
+ *
+ * Complexidade: O(log n).
+ */

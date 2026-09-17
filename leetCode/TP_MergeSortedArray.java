@@ -49,3 +49,26 @@ public class TP_MergeSortedArray {
         }
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Mesclar dois arrays já ordenados (nums1 e nums2) em um único
+ * array ordenado, armazenando o resultado dentro do próprio nums1 (que
+ * tem espaço extra reservado no final).
+ *
+ * 1. Define três ponteiros: i no último elemento válido de nums1, j no
+ *    último elemento de nums2, e k na última posição do array combinado
+ *    (m + n - 1).
+ * 2. Percorre de trás para frente: compara nums1[i] com nums2[j].
+ * 3. Coloca o maior dos dois na posição k (começando pelo fim),
+ *    decrementando o ponteiro correspondente (i ou j) e sempre
+ *    decrementando k.
+ * 4. Continua enquanto ainda houver elementos de nums2 para processar
+ *    (j >= 0) — os elementos restantes de nums1, se sobrarem, já estão
+ *    na posição correta.
+ * 5. Ao final, nums1 contém o resultado da fusão ordenada, sem precisar
+ *    de um array auxiliar.
+ *
+ * Complexidade: O(m + n).
+ */

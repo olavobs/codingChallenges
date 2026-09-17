@@ -45,3 +45,25 @@ public class HM_GroupAnagrams {
         return new String(c);
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Agrupar um array de strings em grupos de anagramas (palavras
+ * que usam as mesmas letras, em qualquer ordem).
+ *
+ * 1. Cria um HashMap onde a chave é a versão "ordenada" (letras em ordem
+ *    alfabética) de cada palavra, e o valor é a lista de palavras
+ *    originais que compartilham essa mesma assinatura.
+ * 2. Para cada palavra do array, ordena suas letras para gerar a chave.
+ * 3. Se a chave ainda não existir no mapa, cria uma nova lista vazia para
+ *    ela.
+ * 4. Adiciona a palavra original à lista correspondente à sua chave —
+ *    anagramas caem sempre na mesma lista, pois têm a mesma versão
+ *    ordenada.
+ * 5. Retorna todas as listas de valores do mapa, cada uma representando
+ *    um grupo de anagramas.
+ *
+ * Complexidade: O(n * m log m), onde m é o tamanho médio das palavras
+ * (por causa da ordenação de cada uma).
+ */

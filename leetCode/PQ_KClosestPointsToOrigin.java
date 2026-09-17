@@ -55,3 +55,24 @@ public class PQ_KClosestPointsToOrigin {
         return point[0] * point[0] + point[1] * point[1];
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar os k pontos mais próximos da origem (0, 0) em um
+ * plano X-Y.
+ *
+ * 1. Cria uma PriorityQueue (max-heap) que ordena os pontos pela distância
+ *    ao quadrado até a origem, do maior para o menor (evita usar raiz
+ *    quadrada, já que comparar distância² dá o mesmo resultado).
+ * 2. Percorre todos os pontos, adicionando cada um à heap.
+ * 3. Sempre que a heap ultrapassar o tamanho k, remove o elemento do topo
+ *    (o de maior distância) — assim a heap nunca guarda mais que os k
+ *    pontos mais próximos vistos até agora.
+ * 4. Ao final, a heap contém exatamente os k pontos mais próximos da
+ *    origem.
+ * 5. Extrai todos os elementos da heap para o array de resultado e
+ *    retorna.
+ *
+ * Complexidade: O(n log k).
+ */

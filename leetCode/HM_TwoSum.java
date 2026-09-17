@@ -44,3 +44,23 @@ public class HM_TwoSum {
         return null;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar os índices de dois números em um array cuja soma seja
+ * igual a um valor alvo (target).
+ *
+ * 1. Cria um HashMap para guardar cada número já visto e o índice em que
+ *    ele apareceu.
+ * 2. Para cada número do array, calcula a diferença necessária para
+ *    chegar ao target (target - nums[i]).
+ * 3. Verifica se essa diferença já existe no mapa — ou seja, se já vimos
+ *    um número que, somado ao atual, dá exatamente o target.
+ * 4. Se existir, retorna os dois índices: o guardado no mapa e o índice
+ *    atual.
+ * 5. Se não existir, adiciona o número atual e seu índice ao mapa e
+ *    continua.
+ *
+ * Complexidade: O(n).
+ */

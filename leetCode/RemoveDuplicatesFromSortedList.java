@@ -92,3 +92,23 @@ public class RemoveDuplicatesFromSortedList {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Remover elementos duplicados de uma lista encadeada já
+ * ordenada, deixando cada valor aparecer apenas uma vez.
+ *
+ * 1. Se a lista estiver vazia ou tiver só um nó, já está sem duplicatas —
+ *    retorna direto.
+ * 2. Usa um ponteiro current começando na cabeça da lista.
+ * 3. Compara o valor do nó atual com o valor do próximo nó.
+ * 4. Se forem iguais, "pula" o próximo nó, conectando current diretamente
+ *    ao nó seguinte a ele (removendo a duplicata da lista); se
+ *    current.next.next for null, apenas encerra a lista ali.
+ * 5. Se forem diferentes, avança current normalmente para o próximo nó.
+ * 6. Repete até o fim da lista e retorna a cabeça (head), agora sem
+ *    duplicatas consecutivas.
+ *
+ * Complexidade: O(n).
+ */

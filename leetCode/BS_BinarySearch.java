@@ -38,3 +38,21 @@ public class BS_BinarySearch {
         return -1;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Buscar um valor (target) em um array ordenado, retornando seu
+ * índice ou -1 se não existir, em tempo O(log n).
+ *
+ * 1. Define dois ponteiros, left no início e right no fim do array.
+ * 2. Enquanto left for menor ou igual a right, calcula o ponto médio
+ *    (middle).
+ * 3. Se o valor no meio for igual ao alvo, retorna o índice middle.
+ * 4. Se o valor no meio for menor que o alvo, descarta a metade esquerda
+ *    (left = middle + 1); se for maior, descarta a metade direita
+ *    (right = middle - 1).
+ * 5. Se o laço terminar sem encontrar o valor, retorna -1.
+ *
+ * Complexidade: O(log n).
+ */

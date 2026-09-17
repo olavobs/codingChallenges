@@ -41,3 +41,25 @@ public class SW_LongestSubstringWithoutRepeatingCharacters {
         return max;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o tamanho da maior substring sem caracteres
+ * repetidos.
+ *
+ * 1. Usa um HashMap para guardar o índice mais recente em que cada
+ *    caractere apareceu.
+ * 2. Mantém dois ponteiros: left (início da janela atual) e right
+ *    (percorre a string).
+ * 3. Para cada caractere em right, verifica se ele já apareceu dentro da
+ *    janela atual (está no mapa); se sim, move left para logo depois da
+ *    última ocorrência desse caractere, encolhendo a janela para
+ *    eliminar a repetição.
+ * 4. Atualiza o mapa com a posição mais recente do caractere atual.
+ * 5. Calcula o tamanho da janela atual (right - left + 1) e mantém o
+ *    maior valor encontrado.
+ * 6. Retorna o maior tamanho de substring sem caracteres repetidos.
+ *
+ * Complexidade: O(n).
+ */

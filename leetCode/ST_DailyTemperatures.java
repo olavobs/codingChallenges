@@ -38,3 +38,28 @@ public class ST_DailyTemperatures {
         return answer;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Para cada dia, descobrir quantos dias faltam até um dia com
+ * temperatura mais quente (0 se não houver nenhum dia mais quente à
+ * frente).
+ *
+ * 1. Cria um array de resposta do mesmo tamanho da entrada, preenchido
+ *    com zeros.
+ * 2. Usa uma pilha (Stack) para guardar índices de dias cuja temperatura
+ *    "mais quente" ainda não foi encontrada.
+ * 3. Para cada dia i, enquanto a pilha não estiver vazia e a temperatura
+ *    atual for maior que a temperatura do dia no topo da pilha, isso
+ *    significa que encontramos o próximo dia mais quente para aquele dia
+ *    guardado: desempilha o índice e calcula a diferença de dias
+ *    (i - index) no array de resposta.
+ * 4. Empilha o índice do dia atual (ele ainda pode ser "batido" por um
+ *    dia futuro).
+ * 5. Ao final, os índices que nunca tiveram um dia mais quente à frente
+ *    permanecem com 0 no array de resposta.
+ *
+ * Complexidade: O(n) — cada índice entra e sai da pilha no máximo uma
+ * vez.
+ */

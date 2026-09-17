@@ -40,3 +40,27 @@ public class TP_SquaresOfASortedArray {
         return response;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Dado um array ordenado (que pode ter negativos), retornar um
+ * array com os quadrados de cada número, também ordenado.
+ *
+ * 1. Como o array de entrada já está ordenado (mas pode ter negativos),
+ *    os maiores valores ao quadrado estarão sempre nas extremidades (o
+ *    número mais negativo ou o mais positivo).
+ * 2. Usa dois ponteiros, left no início e right no fim, e preenche o
+ *    array de resposta de trás para frente (a partir de
+ *    nextHighestPosition, começando no último índice).
+ * 3. Compara o quadrado do valor em left com o quadrado do valor em
+ *    right.
+ * 4. Coloca o maior dos dois quadrados na posição mais alta ainda livre
+ *    do array de resposta, avançando left (se o quadrado da esquerda foi
+ *    o maior) ou recuando right (se foi o da direita).
+ * 5. Repete até os ponteiros se cruzarem, preenchendo o array de resposta
+ *    do maior para o menor valor — resultando em um array de quadrados
+ *    já ordenado.
+ *
+ * Complexidade: O(n).
+ */

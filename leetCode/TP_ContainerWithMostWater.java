@@ -49,3 +49,26 @@ public class TP_ContainerWithMostWater {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Escolher duas linhas verticais que, junto com o eixo x, formam
+ * o recipiente com a maior área possível de água.
+ *
+ * 1. Define dois ponteiros nas extremidades do array: left no início,
+ *    right no fim.
+ * 2. Para cada posição dos ponteiros, calcula a área possível: a largura
+ *    é a distância entre os ponteiros, e a altura é o menor valor entre
+ *    height[left] e height[right] (a água transborda pelo lado mais
+ *    baixo).
+ * 3. Compara essa área com a maior encontrada até agora e atualiza se
+ *    for maior.
+ * 4. Move o ponteiro que aponta para a parede mais baixa para dentro
+ *    (left++ se height[left] for menor, senão right--), já que mover o
+ *    ponteiro da parede mais alta nunca aumentaria a área.
+ * 5. Repete até os ponteiros se encontrarem e retorna a maior área
+ *    encontrada.
+ *
+ * Complexidade: O(n).
+ */

@@ -51,3 +51,23 @@ public class PQ_TopKFrequentElements {
 //        return result;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar os k elementos mais frequentes de um array.
+ *
+ * 1. Cria um HashMap para contar quantas vezes cada número aparece no
+ *    array.
+ * 2. Cria uma PriorityQueue (max-heap) que ordena as entradas do mapa
+ *    pela frequência, da maior para a menor, e adiciona todas as
+ *    entradas do mapa de uma vez.
+ * 3. Remove k elementos do topo da heap (os de maior frequência) e guarda
+ *    suas chaves no array de resposta.
+ * 4. Retorna o array com os k elementos mais frequentes.
+ *
+ * Obs: há uma alternativa comentada no fim que ordena uma lista de
+ * entradas em vez de usar heap — mesma ideia, implementação diferente.
+ *
+ * Complexidade: O(n log n) (heap com todos os elementos do mapa).
+ */

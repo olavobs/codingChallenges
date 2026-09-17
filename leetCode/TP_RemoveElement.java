@@ -44,3 +44,23 @@ public class TP_RemoveElement {
         nums[k] = temp;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Remover todas as ocorrências de um valor (val) de um array,
+ * in-place, e retornar quantos elementos restaram diferentes de val.
+ *
+ * 1. Usa um ponteiro index, que marca a próxima posição onde um elemento
+ *    válido (diferente de val) deve ser escrito.
+ * 2. Percorre o array com outro ponteiro i.
+ * 3. Sempre que encontra um elemento diferente de val, escreve esse valor
+ *    na posição index e avança index.
+ * 4. Elementos iguais a val são simplesmente "pulados" (sobrescritos por
+ *    valores futuros).
+ * 5. Ao final, os primeiros index elementos do array contêm todos os
+ *    valores diferentes de val — retorna index como a quantidade desses
+ *    elementos.
+ *
+ * Complexidade: O(n).
+ */

@@ -53,3 +53,23 @@ public class BF_TwoFurthestHousesWithDifferentColors {
         return maxDistance;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar a maior distância entre duas casas de cores
+ * diferentes em uma fileira.
+ *
+ * 1. Se a primeira e a última casa já tiverem cores diferentes, a maior
+ *    distância possível já é o tamanho do array menos 1 — retorna direto.
+ * 2. Caso contrário, percorre o array comparando cada casa i com a
+ *    primeira e com a última casa.
+ * 3. Se a cor de i for diferente da cor da primeira casa, atualiza a
+ *    distância máxima com i (distância até o início).
+ * 4. Se a cor de i for diferente da cor da última casa, atualiza a
+ *    distância máxima com colors.length - i - 1 (distância até o fim).
+ * 5. Retorna a maior distância encontrada entre casas de cores
+ *    diferentes.
+ *
+ * Complexidade: O(n).
+ */

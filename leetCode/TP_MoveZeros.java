@@ -31,3 +31,23 @@ public class TP_MoveZeros {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Mover todos os zeros de um array para o final, mantendo a
+ * ordem relativa dos elementos não-zero, sem criar uma cópia do array.
+ *
+ * 1. Usa um ponteiro zeroPosition, que marca a próxima posição onde um
+ *    elemento não-zero deve ser colocado.
+ * 2. Percorre o array com outro ponteiro i.
+ * 3. Sempre que encontra um elemento diferente de zero, troca (swap) esse
+ *    elemento com o que está na posição zeroPosition, e avança
+ *    zeroPosition.
+ * 4. Como os zeros "ficam para trás" a cada troca, ao final do laço
+ *    todos os elementos não-zero estarão agrupados no início, na ordem
+ *    original, e os zeros empurrados para o final.
+ * 5. Imprime o array já reorganizado.
+ *
+ * Complexidade: O(n).
+ */

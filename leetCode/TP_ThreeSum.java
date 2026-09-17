@@ -71,3 +71,29 @@ public class TP_ThreeSum {
         return answer;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar todas as triplas de números em um array cuja soma
+ * seja zero, sem repetir triplas.
+ *
+ * 1. Ordena o array de entrada — isso é essencial para usar a técnica de
+ *    dois ponteiros e para facilitar a remoção de duplicatas.
+ * 2. Percorre o array com um ponteiro i, fixando um número por vez como o
+ *    primeiro elemento da tripla.
+ * 3. Pula valores de i repetidos (comparando com o anterior) para evitar
+ *    triplas duplicadas começando pelo mesmo número.
+ * 4. Para cada i fixo, usa dois ponteiros (left logo após i, right no
+ *    fim do array) para buscar os outros dois números cuja soma com
+ *    nums[i] seja igual a zero.
+ * 5. Se a soma dos três for maior que zero, move right para a esquerda
+ *    (precisa de um valor menor); se for menor, move left para a
+ *    direita (precisa de um valor maior); se for exatamente zero,
+ *    encontrou uma tripla válida — adiciona ao resultado e move os dois
+ *    ponteiros, pulando também valores duplicados de left e right para
+ *    não repetir a mesma tripla.
+ * 6. Retorna todas as triplas únicas encontradas cuja soma é zero.
+ *
+ * Complexidade: O(n²).
+ */
