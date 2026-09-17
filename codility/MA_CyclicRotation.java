@@ -51,3 +51,19 @@ public class MA_CyclicRotation {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Rotacionar um array K vezes para a direita.
+ *
+ * 1. Cria um novo array (rotatedA) do mesmo tamanho do array original.
+ * 2. Para cada índice i do array original, calcula a nova posição após a
+ *    rotação: (i + K) % A.length — o módulo garante que o índice "dê a
+ *    volta" quando ultrapassa o tamanho do array.
+ * 3. Coloca o valor original na posição rotacionada, dentro do novo
+ *    array.
+ * 4. Repete para todos os elementos e retorna o array já rotacionado.
+ *
+ * Complexidade: O(n).
+ */

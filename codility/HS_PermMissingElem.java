@@ -28,3 +28,20 @@ public class HS_PermMissingElem {
         return aux.size() + 1;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o número faltante em uma sequência que deveria conter
+ * cada valor de 1 a N+1 exatamente uma vez, mas está faltando um.
+ *
+ * 1. Converte o array em um Set (usando streams), o que elimina
+ *    duplicados e permite consultas O(1) com contains.
+ * 2. Percorre os valores de 1 até o tamanho do set.
+ * 3. Retorna o primeiro valor que não estiver presente no set — esse é o
+ *    elemento faltante.
+ * 4. Se todos os valores de 1 até size estiverem presentes, o elemento
+ *    faltante é size + 1 (o próximo valor esperado da sequência).
+ *
+ * Complexidade: O(n).
+ */

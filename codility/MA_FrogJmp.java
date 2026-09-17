@@ -39,3 +39,21 @@ public class MA_FrogJmp {
 
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Calcular o número mínimo de pulos de tamanho fixo D para um
+ * sapo ir da posição X até uma posição maior ou igual a Y.
+ *
+ * 1. Calcula a distância total que precisa ser percorrida: goalPos -
+ *    currentPos.
+ * 2. Divide essa distância pelo tamanho do pulo (jump), usando divisão em
+ *    ponto flutuante para preservar a parte fracionária.
+ * 3. Arredonda o resultado para cima com Math.ceil, garantindo que
+ *    qualquer resto conte como um pulo extra necessário (já que o sapo não
+ *    pode dar "meio pulo").
+ * 4. Retorna o número mínimo de pulos, convertido para inteiro.
+ *
+ * Complexidade: O(1).
+ */

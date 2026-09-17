@@ -37,3 +37,23 @@ public class BF_BinaryGap {
         return maxSequence;
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o maior "binary gap" (maior sequência de zeros entre
+ * dois uns) na representação binária de um número N.
+ *
+ * 1. Converte N para sua representação em string binária.
+ * 2. Percorre cada caractere dessa string.
+ * 3. Ao encontrar um '1': se já tinha visto um '1' antes, compara o
+ *    tamanho da sequência de zeros acumulada com o maior gap encontrado
+ *    até agora e reseta o contador; se for o primeiro '1' visto, apenas
+ *    marca que já encontrou o início de um possível gap.
+ * 4. Ao encontrar um '0', incrementa o contador da sequência atual de
+ *    zeros.
+ * 5. Retorna o maior gap de zeros encontrado entre dois uns (zeros depois
+ *    do último '1' não contam, pois não há um '1' fechando a sequência).
+ *
+ * Complexidade: O(log N), proporcional ao número de dígitos binários.
+ */

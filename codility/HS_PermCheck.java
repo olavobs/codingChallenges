@@ -74,3 +74,21 @@ public class HS_PermCheck {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Verificar se um array é uma permutação dos números de 1 a N
+ * (contém cada valor de 1 a N exatamente uma vez).
+ *
+ * 1. Adiciona todos os elementos do array em um HashSet, para consulta
+ *    rápida (O(1)) e eliminando duplicatas automaticamente.
+ * 2. Percorre todos os valores de 1 até N (o tamanho do array).
+ * 3. Para cada valor, verifica se ele está presente no set.
+ * 4. Se algum valor de 1 a N não estiver no set, o array não é uma
+ *    permutação válida — retorna 0 imediatamente.
+ * 5. Se o laço terminar sem falhas, todos os valores de 1 a N estão
+ *    presentes — retorna 1.
+ *
+ * Complexidade: O(n).
+ */

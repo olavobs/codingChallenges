@@ -49,3 +49,21 @@ public class HS_OddOccurrencesInArray {
         return aux.iterator().next();
     }
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Encontrar o único elemento sem par em um array onde todos os
+ * outros elementos aparecem em pares.
+ *
+ * 1. Usa um HashSet para guardar elementos "sem par" até o momento.
+ * 2. Para cada elemento, tenta removê-lo do set; se a remoção falhar
+ *    (retornar false, ou seja, ele não estava lá), adiciona o elemento ao
+ *    set.
+ * 3. Elementos que aparecem em pares se cancelam (são adicionados e depois
+ *    removidos); só sobra no set o elemento com ocorrência ímpar (sem
+ *    par).
+ * 4. Retorna esse elemento restante no set.
+ *
+ * Complexidade: O(n).
+ */

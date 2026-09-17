@@ -67,3 +67,21 @@ public class PS_TapeEquilibrium {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Dividir um array em duas partes não vazias e encontrar a menor
+ * diferença absoluta possível entre a soma das duas partes.
+ *
+ * 1. Calcula a soma total de todos os elementos do array (sumAllElements).
+ * 2. Percorre o array da esquerda para a direita, acumulando a soma da
+ *    "primeira parte" (sumFirstPart) até cada ponto de corte P.
+ * 3. Para cada P, calcula a soma da segunda parte por subtração (soma
+ *    total - primeira parte), evitando somar tudo de novo.
+ * 4. Calcula a diferença absoluta entre as duas partes e mantém o menor
+ *    valor encontrado até agora (minDifference).
+ * 5. Retorna a menor diferença encontrada ao final do laço.
+ *
+ * Complexidade: O(n).
+ */

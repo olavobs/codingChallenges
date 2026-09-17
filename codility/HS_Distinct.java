@@ -38,3 +38,17 @@ public class HS_Distinct {
     }
 
 }
+
+/*
+ * PASSO A PASSO DA SOLUÇÃO
+ *
+ * Desafio: Contar quantos valores distintos existem em um array.
+ *
+ * 1. Cria um HashSet vazio.
+ * 2. Adiciona cada elemento do array ao set (valores duplicados são
+ *    automaticamente ignorados, pois um Set não permite repetições).
+ * 3. Retorna o tamanho final do set, que corresponde à quantidade de
+ *    valores distintos no array original.
+ *
+ * Complexidade: O(n).
+ */
