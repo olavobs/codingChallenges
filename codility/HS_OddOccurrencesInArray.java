@@ -41,9 +41,9 @@ public class HS_OddOccurrencesInArray {
     public static int solution(int[] A) {
         Set<Integer> aux = new HashSet<>();
 
-        for (int currentElement : A) {
-            if (!aux.remove(currentElement)) {
-                aux.add(currentElement);
+        for (int a : A) {
+            if (!aux.remove(a)) {
+                aux.add(a);
             }
         }
         return aux.iterator().next();

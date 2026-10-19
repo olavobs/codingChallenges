@@ -16,11 +16,16 @@ dados ou técnica usada para resolver o problema, no formato `SIGLA_NomeDoProble
 | `PS`  | Prefix Sum |
 | `MA`  | Math / Aritmética modular |
 | `BF`  | Brute Force / Simulação (sem estrutura especial) |
+| `DP`  | Dynamic Programming (memoização / tabulação) |
+| `DFS` | Depth-First Search / Recursão em árvore |
+| `BT`  | Backtracking |
+| `LL`  | Linked List (percorrer / manipular ponteiros) |
 
 ## Índice por técnica
 
 ### TP — Two Pointers
 - `leetCode/TP_ContainerWithMostWater.java`
+- `leetCode/TP_LinkedListCycle.java`
 - `leetCode/TP_MergeSortedArray.java`
 - `leetCode/TP_MoveZeros.java`
 - `leetCode/TP_PalindromeNumber.java`
@@ -66,6 +71,7 @@ dados ou técnica usada para resolver o problema, no formato `SIGLA_NomeDoProble
 - `leetCode/BS_SearchInsertPosition.java`
 
 ### PQ — Priority Queue / Heap
+- `leetCode/PQ_KClosestPointsToOrigin.java`
 - `leetCode/PQ_TopKFrequentElements.java`
 
 ### SRT — Sorting
@@ -91,3 +97,23 @@ dados ou técnica usada para resolver o problema, no formato `SIGLA_NomeDoProble
 - `leetCode/BF_LongestCommonPrefix.java`
 - `leetCode/BF_MaximumRepeatingSubstring.java`
 - `leetCode/BF_TwoFurthestHousesWithDifferentColors.java`
+
+### DP — Dynamic Programming
+- `leetCode/DP_ClimbingStairs.java`
+- `leetCode/DP_CoinChange.java`
+- `leetCode/DP_FibonacciNumber.java`
+- `leetCode/DP_HouseRobber.java`
+- `leetCode/DP_NthTribonacciNumber.java`
+- `leetCode/DP_PascalsTriangle.java`
+
+### DFS — Depth-First Search
+- `leetCode/DFS_InvertBinaryTree.java`
+- `leetCode/DFS_MaximumDepthOfBinaryTree.java`
+- `leetCode/DFS_PathSum.java`
+- `leetCode/DFS_SameTree.java`
+
+### BT — Backtracking
+- `leetCode/BT_LetterCombinationOfAPhoneNumber.java`
+
+### LL — Linked List
+- `leetCode/LL_RemoveDuplicatesFromSortedList.java`

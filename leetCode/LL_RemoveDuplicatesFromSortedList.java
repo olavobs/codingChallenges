@@ -9,10 +9,10 @@ package leetCode;
 //Input: head = [1,1,2,3,3]
 //Output: [1,2,3]
 
-public class RemoveDuplicatesFromSortedList {
+public class LL_RemoveDuplicatesFromSortedList {
 
     public static void main(String[] args) {
-        RemoveDuplicatesFromSortedList solution = new RemoveDuplicatesFromSortedList();
+        LL_RemoveDuplicatesFromSortedList solution = new LL_RemoveDuplicatesFromSortedList();
 
         ListNode list1 = solution.buildList(new int[]{1, 1, 2});
         System.out.println(solution.toArrayString(solution.deleteDuplicates(list1)));

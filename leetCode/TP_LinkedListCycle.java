@@ -8,7 +8,7 @@ package leetCode;
 //
 //Return true if there is a cycle in the linked list. Otherwise, return false.
 
-public class LinkedListCycle {
+public class TP_LinkedListCycle {
 
     public static boolean hasCycle(ListNode head) {
         if (head == null) {
