@@ -103,8 +103,11 @@ dados ou técnica usada para resolver o problema, no formato `SIGLA_NomeDoProble
 - `leetCode/DP_CoinChange.java`
 - `leetCode/DP_FibonacciNumber.java`
 - `leetCode/DP_HouseRobber.java`
+- `leetCode/DP_NimGame.java`
 - `leetCode/DP_NthTribonacciNumber.java`
 - `leetCode/DP_PascalsTriangle.java`
+- `leetCode/DP_PredictTheWinner.java`
+- `leetCode/DP_StoneGame.java`
 
 ### DFS — Depth-First Search
 - `leetCode/DFS_InvertBinaryTree.java`
