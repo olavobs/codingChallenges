@@ -108,6 +108,7 @@ dados ou técnica usada para resolver o problema, no formato `SIGLA_NomeDoProble
 - `leetCode/DP_PascalsTriangle.java`
 - `leetCode/DP_PredictTheWinner.java`
 - `leetCode/DP_StoneGame.java`
+- `leetCode/DP_StoneGameVII.java`
 
 ### DFS — Depth-First Search
 - `leetCode/DFS_InvertBinaryTree.java`
